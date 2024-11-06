@@ -142,7 +142,7 @@ const SkillsGrid = () => {
   ];
 
   return (
-    <section className="max-w-4xl mx-auto p-6 bg-desert-secondary rounded-lg">
+    <section className="max-w-4xl mx-auto p-6 bg-desert-secondary rounded-lg h-full">
       <h2 className="flex items-center gap-2 text-2xl font-bold mb-6">
         <FaCode className="text-desert-accent" />
         Technical Skills

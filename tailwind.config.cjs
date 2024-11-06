@@ -27,6 +27,21 @@ module.exports = {
           dark: "#556052", // Deep olive
         },
       },
+      keyframes: {
+        "highlight-message-fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "highlight-message-fade-out": {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+      },
+      animation: {
+        "highlight-message-fade-in": "highlight-message-fade-in 1s ease-in-out",
+        "highlight-message-fade-out":
+          "highlight-message-fade-out 1s ease-in-out",
+      },
     },
   },
   plugins: [],
