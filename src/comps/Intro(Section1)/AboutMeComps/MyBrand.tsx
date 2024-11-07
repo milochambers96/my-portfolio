@@ -1,5 +1,4 @@
 import { useState, useMemo, useEffect } from "react";
-
 import {
   FaPuzzlePiece,
   FaMagnifyingGlass,
@@ -30,21 +29,18 @@ const MyBrand = () => {
         message:
           "Systematic problem-solver transitioning strong analytical skills from financial investigation to coding solutions",
       },
-
       {
         title: "Development Focus",
         icon: <FaLayerGroup />,
         message:
           "Full-stack developer passionate about building efficient, user-focused applications",
       },
-
       {
         title: "Continuous Growth",
         icon: <FaRocket />,
         message:
           "Strong track record of taking on new disciplines and methodologies, transitioning from social sciences to finance to development",
       },
-
       {
         title: "Solution Driven",
         icon: <FaLightbulb />,
@@ -58,34 +54,23 @@ const MyBrand = () => {
   const [highlightMessage, setHighlightMessage] = useState(
     highlightMessages[0]
   );
-
-  const [animationState, setAnimationState] = useState(
-    "highlight-message-fade-in"
-  );
-
-  const [showNextMessage, setShowNextMessage] = useState(false);
+  const [isInFadeState, setIsInFadeState] = useState(false);
 
   useEffect(() => {
-    let messageIndex = 0;
     const interval = setInterval(() => {
-      setAnimationState("highlight-message-fade-out");
+      setIsInFadeState(true);
       setTimeout(() => {
-        setShowNextMessage(true);
-        setTimeout(() => {
-          if (messageIndex === highlightMessages.length - 1) {
-            messageIndex = 0;
-          } else {
-            messageIndex += 1;
-          }
-          setHighlightMessage(highlightMessages[messageIndex]);
-          setAnimationState("highlight-message-fade-in");
-          setShowNextMessage(false);
-        }, 1000);
-      }, 1000);
-    }, 5000);
+        let newIndex = highlightMessages.indexOf(highlightMessage) + 1;
+        if (newIndex === highlightMessages.length) {
+          newIndex = 0;
+        }
+        setHighlightMessage(highlightMessages[newIndex]);
+        setIsInFadeState(false);
+      }, 4000);
+    }, 8000);
 
     return () => clearInterval(interval);
-  }, [highlightMessages]);
+  }, [highlightMessages, highlightMessage]);
 
   return (
     <section
@@ -98,8 +83,10 @@ const MyBrand = () => {
 
       <div
         id="highlight-messages"
-        className={`flex items-center gap-2 text-1xl font-bold mb-6 text-sage-dark animate$-[${animationState}_1s_ease-in-out] opacity-${
-          showNextMessage ? "0" : "100"
+        className={`flex items-center gap-2 text-1xl font-bold mb-6 text-sage-dark ${
+          isInFadeState
+            ? "animate-[highlight-message-fade-out_4s_ease-in-out] opacity-0"
+            : "animate-[highlight-message-fade-in_4s_ease-in-out] opacity-100"
         }`}
       >
         <span className="text-desert-accent">{highlightMessage.icon}</span>

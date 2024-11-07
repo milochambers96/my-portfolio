@@ -30,17 +30,17 @@ module.exports = {
       keyframes: {
         "highlight-message-fade-in": {
           "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
+          "100%": { opacity: "100" },
         },
         "highlight-message-fade-out": {
-          "0%": { opacity: "1" },
+          "0%": { opacity: "100" },
           "100%": { opacity: "0" },
         },
       },
       animation: {
-        "highlight-message-fade-in": "highlight-message-fade-in 1s ease-in-out",
+        "highlight-message-fade-in": "highlight-message-fade-in 4s ease-in-out",
         "highlight-message-fade-out":
-          "highlight-message-fade-out 1s ease-in-out",
+          "highlight-message-fade-out 4s ease-in-out",
       },
     },
   },
