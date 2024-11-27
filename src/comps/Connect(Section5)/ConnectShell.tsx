@@ -19,26 +19,23 @@ const ConnectShell = () => {
             className="mx-auto md:w-4/5 p-6 border-2 border-woodland-secondary rounded-lg space-y-6 "
           >
             <div id="connect-title-container" className="flex justify-center">
-              <h2 className="flex items-center justify-center gap-2 text-3xl font-bold text-woodland-text">
+              <h2 className="flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold text-woodland-text">
                 <FaLink className="text-woodland-secondary" />
                 Connect
               </h2>
             </div>
 
             <div id="connect-message-container">
-              <p className="leading-relaxed md:text-justify font-medium text-woodland-text">
+              <p className="leading-relaxed text-justify text-woodland-text font-semibold">
                 {connectMessage4}
               </p>
             </div>
             <div
               id="connect-options-container"
-              className="grid grid-cols-3 gap-4 font-bold md:text-xl"
+              className="flex justify-center gap-4 font-bold md:text-xl"
             >
               {connectOptions.map((option) => (
-                <div
-                  key={option.connectId}
-                  className="col-span-1 flex justify-center text-nowrap"
-                >
+                <div key={option.connectId}>
                   <p className="text-woodland-link hover:text-woodland-link-select transition-colors duration-200">
                     <a
                       href={option.link}
@@ -48,7 +45,7 @@ const ConnectShell = () => {
                             rel: "noopener noreferrer",
                           }
                         : {})}
-                      className="flex items-center justify-center gap-1"
+                      className="flex  items-center justify-center gap-1 md:px-4 md:py-2"
                     >
                       {option.connectOption}{" "}
                       <span className="text-woodland-secondary">

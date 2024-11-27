@@ -11,7 +11,7 @@ const AboutMe = () => {
         id="about-me-intro-container"
         className="flex flex-col justify-center items-center md:space-y-6 sm:space-y-2 text-woodland-text"
       >
-        <h2 className="flex items-center justify-center gap-2 text-3xl font-bold mb-6">
+        <h2 className="flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold mb-6">
           <FaPuzzlePiece className="text-woodland-secondary" />A Little Bit
           About Me...
         </h2>

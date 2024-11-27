@@ -15,15 +15,21 @@ const ProjectOverview = ({ project }: ProjectOverview) => {
         id={`project${project.projectNum}-subtitle-container`}
         className="text-center"
       >
-        <p className="font-medium">
-          {project.projectType} || {project.buildFormat} project built as a{" "}
-          {project.duration}
+        <p className="hidden md:block font-medium">
+          {project.projectType} <span className="font-black px-1">||</span>{" "}
+          {project.buildFormat} project built as a {project.duration}
         </p>
+        <div className="md:hidden space-y-1 text-sm">
+          <p>{project.projectType}</p>
+          <p>
+            {project.buildFormat} project built as a {project.duration}
+          </p>
+        </div>
       </div>
 
       <div
         id={`project${project.projectNum}-summary-container`}
-        className="space-y-6 text-justify font-medium"
+        className="space-y-6 text-justify font-semibold leading-relaxed"
       >
         {descriptionPararaphs.map((para, index) => (
           <p key={index}>{para}</p>

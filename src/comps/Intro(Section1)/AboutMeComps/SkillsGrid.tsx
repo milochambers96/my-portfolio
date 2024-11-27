@@ -7,7 +7,7 @@ const SkillsGrid = () => {
 
   return (
     <article className="max-w-4xl mx-auto p-6 h-full">
-      <h3 className="flex items-center justify-center gap-2 text-2xl font-bold mb-6 text-woodland-text">
+      <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold mb-6 text-woodland-text">
         <FaCode className="text-woodland-secondary" />
         Technical Skills
       </h3>

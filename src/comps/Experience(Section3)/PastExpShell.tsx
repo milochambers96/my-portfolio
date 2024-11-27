@@ -30,7 +30,7 @@ const PastExpShell = () => {
     <section id="previous-exp" className="mx-auto pt-[60px] px-6 h-full">
       <div className="mt-10">
         <div className="flex justify-center mx-auto  md:w-1/3">
-          <h2 className="flex items-center justify-center gap-2 text-3xl md:text-4xl text-woodland-text font-bold mb-6">
+          <h2 className="flex items-center justify-center gap-2 text-2xl md:text-3xl md:text-4xl text-woodland-text font-bold mb-6">
             {" "}
             <span>
               <FaRoute className="text-woodland-secondary" />{" "}

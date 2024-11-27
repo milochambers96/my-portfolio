@@ -26,7 +26,7 @@ const InterestArticle = ({ interest }: InterestArticleProps) => {
 
         <div
           id="interest-context-container"
-          className="text-justify leading-relaxed font-medium text-woodland-text space-y-3 px-2"
+          className="text-justify leading-relaxed font-semibold text-woodland-text space-y-3 px-2"
         >
           <div className="space-y-3">
             {descriptionParaArray.map((para, index) => (
