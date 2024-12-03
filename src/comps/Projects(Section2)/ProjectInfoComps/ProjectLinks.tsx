@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa6";
+import { TbWorldWww } from "react-icons/tb";
+
 interface ProjectLinkAddress {
   num: number;
   repo: string;
@@ -16,12 +19,14 @@ const ProjectLinks = ({ num, repo, deployed }: ProjectLinkAddress) => {
       className="grid grid-cols-2 justify-center gap-4 md:gap-10 mt-8"
     >
       <a
-        href={repo[0]}
+        href={repo}
         target="_blank"
         rel="noopener noreferrer"
         className={projectButtonLinkTWGroup}
       >
-        GitHub Repo
+        <span className="flex gap-1 items-center justify-center">
+          GitHub Repo <FaGithub />
+        </span>
       </a>
 
       <a
@@ -30,7 +35,9 @@ const ProjectLinks = ({ num, repo, deployed }: ProjectLinkAddress) => {
         rel="noopener noreferrer"
         className={projectButtonLinkTWGroup}
       >
-        Live Site
+        <span className="flex gap-1 items-center justify-center">
+          Live Site <TbWorldWww />
+        </span>
       </a>
     </div>
   );

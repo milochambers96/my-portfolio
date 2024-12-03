@@ -1,7 +1,4 @@
-import {
-  pastPara,
-  presentPara,
-} from "../../../data/TextContent/introText/aboutMe";
+import { careerJourneyParagraphs } from "../../../data/TextContent/introText/aboutMe";
 import { FaCameraRetro } from "react-icons/fa6";
 
 const MyBrand = () => {
@@ -15,9 +12,10 @@ const MyBrand = () => {
         Milo in a Snapshot
       </h3>
 
-      <div className="space-y-6 text-justify leading-relaxed tracking-wide font-medium">
-        <p id="past-para">{pastPara}</p>
-        <p id="pres-para">{presentPara}</p>
+      <div className="space-y-4 text-justify leading-relaxed font-semibold">
+        {careerJourneyParagraphs.map((para, index) => (
+          <p key={index}>{para}</p>
+        ))}
       </div>
     </article>
   );
