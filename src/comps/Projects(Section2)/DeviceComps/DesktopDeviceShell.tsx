@@ -4,7 +4,7 @@ interface DesktopDemoProp {
 
 const DesktopDeviceShell = ({ demo }: DesktopDemoProp) => {
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div className="relative max-w-6xl mx-auto scale-110">
       {/* MacBook-style Frame */}
       <div className="bg-[#575757] rounded-2xl p-4 pt-8 shadow-xl">
         {/* Screen Bezel */}

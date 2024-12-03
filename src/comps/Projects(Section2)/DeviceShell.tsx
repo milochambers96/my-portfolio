@@ -12,7 +12,7 @@ const DeviceShell = ({ projectDemo, demoDisplay }: DeviceShellProps) => {
   return (
     <div
       id="project-device-container"
-      className="max-w-4xl mx-auto p-6  rounded-lg min-h-[780px] h-full"
+      className="max-w-4xl mx-auto p-6  min-h-[780px] h-full"
     >
       <div className="h-[calc(100%-4rem)]">
         {demoDisplay === "desktop" ? (
