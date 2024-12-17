@@ -13,7 +13,7 @@ interface SlideProps {
 
 const SwiperComp = ({ images }: SlideProps) => {
   return (
-    <div className="col-span-1 flex justify-center items-center min-h-[400px] md:h-full rounded-3xl bg-woodland-muted/70">
+    <div className="col-span-1 flex justify-center items-center min-h-[400px] md:h-full rounded-3xl bg-woodland-muted/50">
       <div className="w-full max-w-2xl mx-auto px-4">
         <Swiper
           modules={[Navigation, Pagination]}
@@ -43,7 +43,7 @@ const SwiperComp = ({ images }: SlideProps) => {
                     ></img>
                   </div>
                 </div>
-                <div className="w-[92%] md:w-[95%] mx-auto bg-woodland-accent rounded-lg shadow-lg mb-4 md:mb-8">
+                <div className="w-[92%] md:w-[70%] mx-auto bg-woodland-accent rounded-lg shadow-lg mb-4 md:mb-8">
                   <figcaption className="text-woodland-accent-text italic text-xs md:text-base text-justify  p-3">
                     {image.caption}
                   </figcaption>

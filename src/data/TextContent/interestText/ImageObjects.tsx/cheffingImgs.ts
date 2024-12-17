@@ -8,14 +8,15 @@ import tapas from "../../../../assets/images/interest-images/cheffing-images/tap
 const sambalShellfish: InterestImage = {
   source: amsterdamSambal,
   caption:
-    "Had this amazing sambal shellfish in Amsterdam and had to try recreating it at home - sometimes you just can't get a good dish out of your head",
+    "Had this amazing sambal shellfish in Amsterdam and had to try recreating it at home - sometimes you just can't get a good dish out of your head.",
   alt: "A dinner spread featuring sambal beer shellfish, Vietnamese purple cabbage, and sesame lime carrots on a wooden table with decorative plates",
 };
 
 const sambalVong: InterestImage = {
   source: samVong,
   caption:
-    "East meets West dinner experiment - a spicy sambal vongole. Sometimes the best ideas come from mixing different worlds together - works for coding, definitely works for dinner!",
+    "Added an Italian twist to that Indonesian-inspired Amsterdam dish - love it when multiple perspectives collide to make a whole.",
+
   alt: "A cozy dinner setting with two dishes: spaghetti vongole with sambal sauce in a terracotta bowl, and roasted fennel with parmesan on a white plate, lit by candlelight",
 };
 
@@ -29,7 +30,7 @@ const steakChimichurri: InterestImage = {
 const tapasSpread: InterestImage = {
   source: tapas,
   caption:
-    "Turned the kitchen into a Spanish tapas bar - sometimes the best results come from combining lots of small, well-crafted pieces",
+    "Turned the kitchen into a Spanish tapas bar - sometimes the best results come from combining lots of small, well-crafted pieces.",
   alt: "A spread of Spanish tapas including colorful tomato salad, olives, dips, crackers, and grapes arranged on a wooden table",
 };
 

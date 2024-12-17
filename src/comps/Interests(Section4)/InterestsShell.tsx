@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaFingerprint } from "react-icons/fa6";
 
-import { intIntro2 } from "../../data/TextContent/interestText/interestIntro";
+import { intIntro } from "../../data/TextContent/interestText/interestIntro";
 import { IInterest } from "../../interfaces/interest";
 import {
   cheffing,
@@ -13,13 +13,11 @@ import TripplePillTab from "../UtilityComps/TripplePillTab";
 import InterestArticle from "./InterestArticle";
 import SwiperComp from "./SwiperComp";
 
-import { workExps } from "../../data/TextContent/expText/workExps";
-
 const InterestsShell = () => {
   const [info, setInfo] = useState("clambering");
   const [interestData, setInterestData] = useState<IInterest>(cheffing);
 
-  const intro = intIntro2;
+  const intro = intIntro;
 
   useEffect(() => {
     switch (info) {
