@@ -15,6 +15,7 @@ import {
 import project1DeskDemo from "../../Videos&Gifs/Project1/Project1-Desk.mp4";
 import project2DeskDemo from "../../Videos&Gifs/Project2/Project2-Desk.mp4";
 import project3DeskDemo from "../../Videos&Gifs/Project3/Project3-Desk.mp4";
+import project4DeskDemo from "../../Videos&Gifs/Project4/Project4-Desk.mp4";
 
 import { FaGamepad, FaHatWizard, FaFilm, FaPalette } from "react-icons/fa";
 
@@ -120,5 +121,8 @@ export const GAProjects: IProject[] = [
     description: project4Description,
     repo: "https://github.com/milochambers96/OpenStudio-FE",
     deployed: "https://openstudio-app.netlify.app/",
+    demo: {
+      desktop: project4DeskDemo,
+    },
   },
 ];

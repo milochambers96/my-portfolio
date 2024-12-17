@@ -34,6 +34,5 @@ thinking and finding unconventional solutions. From helping to install large-sca
 installations to coordinating with artists across language barriers, each project 
 revealed new ways of approaching and solving challenges.
 
-Today, I explore art both as an observer and through my film photography hobby - 
-finding joy in galleries on Sunday afternoons and occasionally capturing moments 
-on 35mm that tell their own quiet stories.`;
+Today, I explore creative outlets both as an observer and through my film photography hobby - 
+finding joy in visiting galleries and capturing moments on 35mm that tell their own quiet stories.`;

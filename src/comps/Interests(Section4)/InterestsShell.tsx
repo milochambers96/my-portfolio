@@ -6,7 +6,7 @@ import { IInterest } from "../../interfaces/interest";
 import {
   cheffing,
   clambering,
-  creative,
+  creating,
 } from "../../data/TextContent/interestText/interests";
 
 import TripplePillTab from "../UtilityComps/TripplePillTab";
@@ -30,7 +30,7 @@ const InterestsShell = () => {
         setInterestData(cheffing);
         break;
       default:
-        setInterestData(creative);
+        setInterestData(creating);
     }
   }, [info]);
 
@@ -56,7 +56,7 @@ const InterestsShell = () => {
           <TripplePillTab
             option1="clambering"
             option2="cheffing"
-            option3="creativity"
+            option3="creating"
             info={info}
             setInfo={setInfo}
           />

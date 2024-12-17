@@ -15,9 +15,10 @@ import {
   argGlacier2,
   ecuadorWaterfall,
   mordor,
-} from "./ImageObjects.tsx/clamberingImg";
+} from "./ImageObjects.tsx/clamberingImgs";
 
-import { berlinSigns } from "./ImageObjects.tsx/creativeImg";
+import { cheffingImages } from "./ImageObjects.tsx/cheffingImgs";
+import { creatingImages } from "./ImageObjects.tsx/creatingImgs";
 
 export const cheffing: IInterest = {
   title: "Cheffing & Munching",
@@ -33,6 +34,7 @@ export const cheffing: IInterest = {
     ],
   },
   linkToCode: cheffingToCode,
+  images: cheffingImages,
 };
 
 export const clambering: IInterest = {
@@ -53,8 +55,8 @@ export const clambering: IInterest = {
   linkToCode: clamberingToCode1,
 };
 
-export const creative: IInterest = {
-  title: "Creative Journey",
+export const creating: IInterest = {
+  title: "Creative Explorations",
   description: creativeDescription,
   icon: <BsEasel />,
   favourite: {
@@ -67,5 +69,5 @@ export const creative: IInterest = {
     ],
   },
   linkToCode: creativeToCode1,
-  images: [berlinSigns],
+  images: creatingImages,
 };

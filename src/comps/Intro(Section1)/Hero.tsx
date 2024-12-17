@@ -3,11 +3,14 @@ import PortTitle from "./HeroComps/PortTitle";
 
 const Hero = () => {
   return (
-    <section id="hero" className="pt-[60px] bg-woodland-muted py-14 md:py-36">
-      <div className="hidden md:block">
+    <section
+      id="hero"
+      className="pt-[60px] bg-woodland-muted h-screen flex items-center justify-center"
+    >
+      <div className="hidden md:block ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 gap-4 mt-10 ">
-            <article className="col-span-1">
+            <article className="col-span-1 scale-125">
               <PortPhoto />
             </article>
 
