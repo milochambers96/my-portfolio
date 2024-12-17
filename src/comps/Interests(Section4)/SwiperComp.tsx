@@ -34,11 +34,11 @@ const SwiperComp = ({ images }: SlideProps) => {
                 <div className="w-[92%] md:w-[95%] mx-auto">
                   <div
                     id="image-container"
-                    className="w-full h-48 md:h-64 flex items-center justify-center"
+                    className="w-full h-48 md:h-64 flex items-center justify-center rounded-2xl"
                   >
                     <img
                       src={image.source}
-                      className="w-full h-full rounded-lg object-cover"
+                      className="h-full object-contain border border-woodland-muted rounded-2xl shadow-lg"
                       alt={image.alt}
                     ></img>
                   </div>
