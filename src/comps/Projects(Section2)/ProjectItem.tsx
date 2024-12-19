@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DualPillTab from "../UtilityComps/DualPillTab";
+import DualPillTab from "../Utility/DualPillTab";
 import DeviceShell from "./DeviceShell";
 import ProjectInfoShell from "./ProjectInfoShell";
 import { IProject } from "../../data/TextContent/projectsText/projects";

@@ -9,7 +9,7 @@ import {
   creating,
 } from "../../data/TextContent/interestText/interests";
 
-import TripplePillTab from "../UtilityComps/TripplePillTab";
+import TripplePillTab from "../Utility/TripplePillTab";
 import InterestArticle from "./InterestArticle";
 import SwiperComp from "./SwiperComp";
 

@@ -6,7 +6,7 @@ import { academicExps } from "../../data/TextContent/expText/academicExps";
 
 import { FaRoute } from "react-icons/fa6";
 
-import DualPillTab from "../UtilityComps/DualPillTab";
+import DualPillTab from "../Utility/DualPillTab";
 import PastExpChain from "./PastExpChain";
 
 import { connectOptions } from "../../data/TextContent/connectText/connectOptions";

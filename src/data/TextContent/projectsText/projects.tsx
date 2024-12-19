@@ -1,28 +1,27 @@
 import {
-  project1Summary,
-  project2Summary,
-  project3Summary,
-  project4Summary,
-} from "./ArchivedText/projectSummaries";
-
-import {
   project1Description,
   project2Description,
   project3Description,
   project4Description,
 } from "./projectsDescriptions";
 
-import project1DeskDemo from "../../Videos&Gifs/Project1/Project1-Desk.mp4";
-import project1MobDemo from "../../Videos&Gifs/Project1/Project1-Mobile.mp4";
+import project1DeskDemo from "../../Videos/DeskDemo/Project1-Desk.mp4";
 
-import project2DeskDemo from "../../Videos&Gifs/Project2/Project2-Desk.mp4";
-import project2MobDemo from "../../Videos&Gifs/Project2/Project2-Mobile.mp4";
+import project2DeskDemo from "../../Videos/DeskDemo/Project2-Desk.mp4";
+// import project2MobDemo from "../../Videos//Project2-Mobile.mp4";
 
-import project3DeskDemo from "../../Videos&Gifs/Project3/Project3-Desk.mp4";
-import project3MobDemo from "../../Videos&Gifs/Project3/Project3-Mobile.mp4";
+import project3DeskDemo from "../../Videos/DeskDemo/Project3-Desk.mp4";
+// import project3MobDemo from "../../Videos/Project3/Project3-Mobile.mp4";
 
-import project4DeskDemo from "../../Videos&Gifs/Project4/Project4-Desk.mp4";
-import project4MobDemo from "../../Videos&Gifs/Project4/Project4-Mobile.mp4";
+import project4DeskDemo from "../../Videos/DeskDemo/Project4-Desk.mp4";
+// import project4MobDemo from "../../Videos/Project4/Project4-Mobile.mp4";
+
+import {
+  project1MobDemoUrl,
+  project2MobDemoUrl,
+  project3MobDemoUrl,
+  project4MobDemoUrl,
+} from "../../Videos/MobileDemo/mobileDemoUrls";
 
 import { FaGamepad, FaHatWizard, FaFilm, FaPalette } from "react-icons/fa";
 
@@ -34,7 +33,6 @@ export interface IProject {
   builtWith: string[];
   buildFormat: string;
   duration: string;
-  summary: string;
   description: string;
   repo: string;
   deployed: string;
@@ -55,13 +53,12 @@ export const GAProjects: IProject[] = [
     builtWith: ["JavaScript", "HTML5", "CSS3"],
     buildFormat: "Solo",
     duration: "1 Week Sprint",
-    summary: project1Summary,
     description: project1Description,
     repo: "https://github.com/milochambers96/PacMan-Clone",
     deployed: "https://milochambers96.github.io/PacMan-Clone/",
     demo: {
       desktop: project1DeskDemo,
-      mobile: project1MobDemo,
+      mobile: project1MobDemoUrl,
     },
   },
   {
@@ -72,13 +69,12 @@ export const GAProjects: IProject[] = [
     builtWith: ["React", "JavaScript", "HTML5", "CSS3", "Bulma"],
     buildFormat: "Pair",
     duration: "48 Hour Hackathon",
-    summary: project2Summary,
     description: project2Description,
     repo: "https://github.com/milochambers96/harry-potter-quiz-game/tree/main",
     deployed: "https://harry-potter-quiz-game.netlify.app/",
     demo: {
       desktop: project2DeskDemo,
-      mobile: project2MobDemo,
+      mobile: project2MobDemoUrl,
     },
   },
 
@@ -100,13 +96,12 @@ export const GAProjects: IProject[] = [
     ],
     buildFormat: "Solo",
     duration: "1 Week Sprint",
-    summary: project3Summary,
     description: project3Description,
     repo: "https://github.com/milochambers96/kino-frontend",
     deployed: "https://kino-connect.netlify.app/",
     demo: {
       desktop: project3DeskDemo,
-      mobile: project3MobDemo,
+      mobile: project3MobDemoUrl,
     },
   },
 
@@ -127,13 +122,12 @@ export const GAProjects: IProject[] = [
     ],
     buildFormat: "Solo",
     duration: "1 Week Sprint",
-    summary: project4Summary,
     description: project4Description,
     repo: "https://github.com/milochambers96/OpenStudio-FE",
     deployed: "https://openstudio-app.netlify.app/",
     demo: {
       desktop: project4DeskDemo,
-      mobile: project4MobDemo,
+      mobile: project4MobDemoUrl,
     },
   },
 ];
