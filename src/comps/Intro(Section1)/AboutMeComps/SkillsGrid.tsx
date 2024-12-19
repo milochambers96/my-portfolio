@@ -7,7 +7,7 @@ const SkillsGrid = () => {
 
   return (
     <article className="max-w-4xl mx-auto p-6 h-full">
-      <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold mb-6 text-woodland-text">
+      <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold font-space mb-6 text-woodland-text">
         <FaCode className="text-woodland-secondary" />
         Technical Skills
       </h3>
@@ -21,10 +21,12 @@ const SkillsGrid = () => {
             }
           >
             <div className={`text-4xl ${skill.color} mb-2`}>{skill.icon}</div>
-            <span className="text-sm font-medium text-center">
+            <span className="text-sm font-medium text-center font-redhat">
               {skill.name}
             </span>
-            <span className="text-xs text-gray-500 mt-1">{skill.category}</span>
+            <span className="text-xs text-gray-500 font-outfit mt-1">
+              {skill.category}
+            </span>
           </div>
         ))}
       </div>

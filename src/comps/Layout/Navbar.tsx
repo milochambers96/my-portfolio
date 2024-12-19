@@ -16,12 +16,12 @@ const Navbar = () => {
     <header>
       <nav
         id="portfolio-navbar"
-        className="fixed w-full bg-woodland-muted/85 z-50"
+        className="fixed w-full bg-woodland-muted/85 backdrop-blur-sm z-50"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
           <div className="font-semibold md:text-lg sm:text-base">
             {/*Desktop Navbar */}
-            <ul className="hidden md:flex justify-evenly text-woodland-secondary">
+            <ul className="hidden md:flex justify-evenly text-woodland-secondary font-redhat">
               {navItems.map((item, index) => (
                 <li key={index}>
                   <a
@@ -52,7 +52,7 @@ const Navbar = () => {
                 absolute
                 left-0
                 right-0
-                bg-woodland-muted/90
+                bg-woodland-muted/85
                 backdrop-blur-sm
                 transform
                 transition-all
@@ -61,7 +61,7 @@ const Navbar = () => {
                 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
               `}
             >
-              <ul className="py-4 px-6 space-y-4 text-woodland-secondary">
+              <ul className="py-4 px-6 space-y-4 text-woodland-secondary font-redhat">
                 {navItems.map((item) => (
                   <li key={item.text}>
                     <a

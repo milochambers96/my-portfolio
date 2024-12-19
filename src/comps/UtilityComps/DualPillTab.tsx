@@ -33,7 +33,7 @@ const DualPillTab = ({
   }, [infoToRender]);
 
   return (
-    <div className="relative bg-woodland-muted/70 rounded-full p-1 flex w-48">
+    <div className="relative bg-woodland-muted/70 rounded-full p-1 flex w-48 font-redhat">
       {/* Sliding background */}
       <div
         className={`absolute top-1 h-[calc(100%-8px)] w-[calc(50%-4px)] rounded-full transition-all duration-300 ease-in-out bg-woodland-accent

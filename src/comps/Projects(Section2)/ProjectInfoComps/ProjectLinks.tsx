@@ -16,7 +16,7 @@ const ProjectLinks = ({ num, repo, deployed }: ProjectLinkAddress) => {
   return (
     <div
       id={`project-${num}-buttons-container`}
-      className="grid grid-cols-2 justify-center gap-4 md:gap-10 mt-8"
+      className="grid grid-cols-2 justify-center gap-4 md:gap-10 mt-8 font-space"
     >
       <a
         href={repo}
@@ -25,7 +25,7 @@ const ProjectLinks = ({ num, repo, deployed }: ProjectLinkAddress) => {
         className={projectButtonLinkTWGroup}
       >
         <span className="flex gap-1 items-center justify-center">
-          GitHub Repo <FaGithub />
+          GitHub <FaGithub />
         </span>
       </a>
 

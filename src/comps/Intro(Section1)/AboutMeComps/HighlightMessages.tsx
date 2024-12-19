@@ -18,7 +18,7 @@ const HighlightMessages = () => {
       {
         title: "Analytical Mindset",
         message:
-          "Bringing investigative rigor from financial compliance into elegant coding solutions",
+          "Bringing investigative rigor from financial crime compliance into elegant coding solutions",
       },
       {
         title: "Development Focus",
@@ -28,7 +28,7 @@ const HighlightMessages = () => {
       {
         title: "User-Centered",
         message:
-          "Combining technical skills with strong communication to deliver solutions that truly serve user needs",
+          "Combining technical skills with strong communication to deliver solutions that serve user needs",
       },
     ],
     []
@@ -64,7 +64,9 @@ const HighlightMessages = () => {
           : "animate-[highlight-message-fade-in_4s_ease-in-out] opacity-100"
       }`}
     >
-      <h4>{highlightMessage.message}</h4>
+      <h4 className="font-redhat text-justify sm:text-woodland-secondary">
+        {highlightMessage.message}
+      </h4>
     </div>
   );
 };

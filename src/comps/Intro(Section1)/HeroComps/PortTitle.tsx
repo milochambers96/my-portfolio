@@ -5,14 +5,14 @@ const PortTitle = () => {
     <>
       <h1
         id="portfolio-title"
-        className="flex items-center justify-center gap-2 text-3xl md:text-6xl font-extrabold"
+        className="flex items-center justify-center gap-2 text-3xl md:text-6xl font-extrabold font-space"
       >
         Hi I'm Milo{" "}
         <FaHand className="my-auto text-woodland-secondary animate-wave origin-[70%_70%]" />{" "}
       </h1>
       <h2
         id="portfolio-subtitle"
-        className="text-xl md:text-4xl text-justify font-semibold leading-relaxed"
+        className="text-xl md:text-4xl text-justify font-semibold font-redhat leading-relaxed"
       >
         I am a{" "}
         <span className="font-bold italic text-woodland-link">
@@ -20,8 +20,8 @@ const PortTitle = () => {
         </span>
         , based in{" "}
         <span className="font-bold italic text-woodland-link">London</span>,
-        with a background in social sciences and anti-money laundering
-        investigations.
+        with a background in social sciences, activism, and anti-money
+        laundering investigations.
       </h2>
     </>
   );

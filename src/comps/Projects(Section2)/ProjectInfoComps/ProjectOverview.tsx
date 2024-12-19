@@ -10,7 +10,7 @@ const ProjectOverview = ({ project }: ProjectOverview) => {
   const descriptionPararaphs = project.description.split("\n\n");
 
   return (
-    <div className="flex flex-col space-y-6 text-woodland-text">
+    <div className="flex flex-col space-y-6 text-woodland-text font-outfit">
       <div
         id={`project${project.projectNum}-subtitle-container`}
         className="text-center"

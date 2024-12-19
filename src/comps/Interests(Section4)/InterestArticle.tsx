@@ -15,7 +15,7 @@ const InterestArticle = ({ interest }: InterestArticleProps) => {
         <div className="flex justify-center">
           <h3
             id="interest-header-container"
-            className="inline-flex gap-1 font-semibold text-xl text-woodland-text"
+            className="inline-flex gap-1 text-xl text-woodland-text font-semibold font-redhat"
           >
             <span className="text-woodland-secondary my-auto">
               {interest.icon}
@@ -26,7 +26,7 @@ const InterestArticle = ({ interest }: InterestArticleProps) => {
 
         <div
           id="interest-context-container"
-          className="text-justify leading-relaxed font-semibold text-woodland-text space-y-3 px-2"
+          className="text-justify leading-relaxed text-woodland-text font-semibold font-outfit space-y-3 px-2"
         >
           <div className="space-y-3">
             {descriptionParaArray.map((para, index) => (
@@ -37,15 +37,6 @@ const InterestArticle = ({ interest }: InterestArticleProps) => {
           <div>
             <p>{interest.linkToCode}</p>
           </div>
-
-          {/* <div className="space-y-1">
-            <p>{interest.favourite?.intro}</p>
-            <ul className="list-disc list-inside space-y-1 ml-2">
-              {interest.favourite?.favList.map((liItem, index) => (
-                <li key={index}>{liItem}</li>
-              ))}
-            </ul>
-          </div> */}
         </div>
       </div>
     </div>

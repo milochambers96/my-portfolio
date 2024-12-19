@@ -42,7 +42,7 @@ const TripplePillTab = ({
   }, [whatToRender]);
 
   return (
-    <div className="relative bg-woodland-muted/70 rounded-full p-1 flex w-full shadow-xl">
+    <div className="relative bg-woodland-muted/70 rounded-full p-1 flex w-full shadow-xl font-redhat">
       {/* Sliding background */}
       <div
         className={`absolute top-1 h-[calc(100%-8px)] w-[calc(33%-1px)] rounded-full transition-all duration-300 ease-in-out bg-woodland-accent 

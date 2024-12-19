@@ -13,9 +13,16 @@ import {
 } from "./projectsDescriptions";
 
 import project1DeskDemo from "../../Videos&Gifs/Project1/Project1-Desk.mp4";
+import project1MobDemo from "../../Videos&Gifs/Project1/Project1-Mobile.mp4";
+
 import project2DeskDemo from "../../Videos&Gifs/Project2/Project2-Desk.mp4";
+import project2MobDemo from "../../Videos&Gifs/Project2/Project2-Mobile.mp4";
+
 import project3DeskDemo from "../../Videos&Gifs/Project3/Project3-Desk.mp4";
+import project3MobDemo from "../../Videos&Gifs/Project3/Project3-Mobile.mp4";
+
 import project4DeskDemo from "../../Videos&Gifs/Project4/Project4-Desk.mp4";
+import project4MobDemo from "../../Videos&Gifs/Project4/Project4-Mobile.mp4";
 
 import { FaGamepad, FaHatWizard, FaFilm, FaPalette } from "react-icons/fa";
 
@@ -54,6 +61,7 @@ export const GAProjects: IProject[] = [
     deployed: "https://milochambers96.github.io/PacMan-Clone/",
     demo: {
       desktop: project1DeskDemo,
+      mobile: project1MobDemo,
     },
   },
   {
@@ -70,6 +78,7 @@ export const GAProjects: IProject[] = [
     deployed: "https://harry-potter-quiz-game.netlify.app/",
     demo: {
       desktop: project2DeskDemo,
+      mobile: project2MobDemo,
     },
   },
 
@@ -97,6 +106,7 @@ export const GAProjects: IProject[] = [
     deployed: "https://kino-connect.netlify.app/",
     demo: {
       desktop: project3DeskDemo,
+      mobile: project3MobDemo,
     },
   },
 
@@ -123,6 +133,7 @@ export const GAProjects: IProject[] = [
     deployed: "https://openstudio-app.netlify.app/",
     demo: {
       desktop: project4DeskDemo,
+      mobile: project4MobDemo,
     },
   },
 ];

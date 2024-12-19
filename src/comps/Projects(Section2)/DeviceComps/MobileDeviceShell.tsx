@@ -17,7 +17,15 @@ const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
         {/* Screen */}
         <div className="bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
           {/* Project Demo Content */}
-          <div className="h-full w-full bg-gray-50">Mobile Demo Content</div>
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={demo} type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>

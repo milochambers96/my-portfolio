@@ -18,9 +18,9 @@ const PastExpChain = ({ pastExp }: ExpChainProp) => {
               <div className="grid grid-cols-4 gap-4 md:ml-4">
                 <div
                   id={`exp-text-container-${exp.id}`}
-                  className="col-span-3 space-y-2 md:mt-5"
+                  className="col-span-3 space-y-2 md:mt-5 font-outfit"
                 >
-                  <h4 className="font-bold text-sm md:text-lg">
+                  <h4 className="font-bold font-redhat text-sm md:text-lg">
                     {"position" in exp ? exp.position : exp.course}
                   </h4>
                   <p className="text-sm md:text-base">
@@ -48,7 +48,7 @@ const PastExpChain = ({ pastExp }: ExpChainProp) => {
                 </div>
               </div>
               {"responsibilities" in exp && (
-                <ul className="mt-4 space-y-2 list-disc list-outside md:ml-4 pl-4">
+                <ul className="mt-4 space-y-2 list-disc list-outside md:ml-4 pl-4 font-outfit">
                   {exp.responsibilities.map((responsibility, index) => (
                     <li
                       key={index}

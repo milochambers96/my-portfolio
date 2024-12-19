@@ -7,21 +7,24 @@ module.exports = {
     extend: {
       colors: {
         woodland: {
-          // Main colors
-          background: "#1C2421", // Deep Fern
-          text: "#E5EDE9", // Morning Frost
-          secondary: "#8FA098", // Forest Mist
-          accent: "#2D4B3E", // Pine Needle
-          "accent-text": "#F2F7F5", // Frost White
+          background: "#1C2421",
+          text: "#E5EDE9",
+          secondary: "#8FA098",
+          accent: "#2D4B3E",
+          "accent-text": "#F2F7F5",
 
-          link: "#7FBA9A", // sage/mint green
-          "link-select": "#94CF96", // birght moss,
+          link: "#7FBA9A",
+          "link-select": "#94CF96",
 
-          // Additional variants for flexibility
-          muted: "#2A3530", // Slightly lighter than background for subtle contrast
-          "secondary-hover": "#A0B0A8", // Lighter version of secondary for hover states
-          "accent-hover": "#375B4B", // Lighter version of accent for hover states
+          muted: "#2A3530",
+          "secondary-hover": "#A0B0A8",
+          "accent-hover": "#375B4B",
         },
+      },
+      fontFamily: {
+        space: ["Space Grotesk", "sans-serif"],
+        redhat: ["Red Hat Display", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
       },
       keyframes: {
         "highlight-message-fade-in": {

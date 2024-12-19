@@ -36,16 +36,16 @@ const InterestsShell = () => {
     <section id="interests" className="pt-[60px]">
       <div id="interests-container" className="space-y-6 p-6">
         <div id="interests-header-container" className="flex justify-center">
-          <h2 className="flex gap-2 text-2xl md:text-3xl font-bold text-woodland-text">
+          <h2 className="flex gap-2 text-2xl md:text-3xl text-woodland-text font-bold font-space">
             <span className="my-auto text-woodland-secondary">
               <FaFingerprint />
             </span>
-            The man behind the code
+            The full stack of Milo
           </h2>
         </div>
 
         <div id="interests-intro-container" className="mx-auto px-2">
-          <p className="text-justify text-woodland-text leading-relaxed font-semibold">
+          <p className="text-justify text-woodland-text leading-relaxed font-semibold font-outfit">
             {intro}
           </p>
         </div>

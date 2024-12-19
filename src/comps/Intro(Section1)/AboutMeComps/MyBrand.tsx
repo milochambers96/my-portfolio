@@ -7,14 +7,16 @@ const MyBrand = () => {
       id="my-brand-statement"
       className="max-w-4xl mx-auto p-6 h-full text-woodland-text"
     >
-      <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold mb-6">
+      <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold font-space mb-6">
         <FaCameraRetro className="text-woodland-secondary" />
         Milo in a Snapshot
       </h3>
 
       <div className="space-y-4 text-justify leading-relaxed font-semibold">
         {careerJourneyParagraphs.map((para, index) => (
-          <p key={index}>{para}</p>
+          <p key={index} className="font-outfit">
+            {para}
+          </p>
         ))}
       </div>
     </article>

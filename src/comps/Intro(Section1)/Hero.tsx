@@ -23,7 +23,8 @@ const Hero = () => {
 
       <div className="md:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <article className="p-4 space-y-4 text-woodland-text">
+          <article className="p-4 space-y-4 text-woodland-text space-y-8">
+            <PortPhoto />
             <PortTitle />
           </article>
         </div>
