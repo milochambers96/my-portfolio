@@ -18,7 +18,7 @@ const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
         <div className="bg-woodland-background rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
           {/* Project Demo Content */}
           <video
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
             autoPlay
             loop
             muted
