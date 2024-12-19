@@ -1,8 +1,29 @@
+import { useState, useEffect, useRef } from "react";
+
 interface MobileDemoProp {
   demo: string | undefined;
 }
 
 const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [aspectRatio, setAspectRatio] = useState<number | null>(null);
+
+  useEffect(() => {
+    const getVideoAspectRatio = (videoElement: HTMLVideoElement): number => {
+      return videoElement.videoWidth / videoElement.videoHeight;
+    };
+
+    if (videoRef.current) {
+      videoRef.current.onloadedmetadata = () => {
+        if (videoRef.current) {
+          const ratio = getVideoAspectRatio(videoRef.current);
+          setAspectRatio(ratio);
+          console.log("Aspect Ratio:", ratio);
+        }
+      };
+    }
+  }, []);
+
   return (
     <div className="relative max-w-[320px] mx-auto">
       {/* iPhone Frame */}
@@ -15,7 +36,11 @@ const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
         <div className="absolute left-[-8px] top-20 w-2 h-8 bg-gray-800 rounded-l-lg"></div>
         <div className="absolute left-[-8px] top-32 w-2 h-8 bg-gray-800 rounded-l-lg"></div>
         {/* Screen */}
-        <div className="bg-woodland-background rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
+        <div
+          className={`bg-woodland-background rounded-[2.5rem] overflow-hidden ${
+            aspectRatio ? `aspect-[${aspectRatio}]` : "aspect-[9/19.5]"
+          }`}
+        >
           {/* Project Demo Content */}
           <video
             className="w-full h-full object-cover"
