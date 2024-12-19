@@ -14,7 +14,7 @@ const DesktopDeviceShell = ({ demo }: DesktopDemoProp) => {
             <div className="w-2 h-2 rounded-full bg-[#272727]"></div>
           </div>
           {/* Screen Content */}
-          <div className="bg-woodland-g rounded aspect-video w-full overflow-hidden">
+          <div className="bg-woodland-background rounded aspect-video w-full overflow-hidden">
             <video
               className="w-full h-full object-cover"
               autoPlay
