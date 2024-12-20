@@ -14,7 +14,7 @@ const PastExpChain = ({ pastExp }: ExpChainProp) => {
             id={`past-exp-bubble-${exp.id}`}
             className="flex justify-center leading-relaxed"
           >
-            <div className="md:w-4/5 shadow-lg border-2 border-woodland-secondary rounded-lg p-4 shadow-2xl">
+            <div className="md:w-4/5 backdrop-blur-sm bg-woodland-muted/50 shadow-lg border-2 border-woodland-secondary rounded-lg p-4 shadow-2xl">
               <div className="grid grid-cols-4 gap-4 md:ml-4">
                 <div
                   id={`exp-text-container-${exp.id}`}
