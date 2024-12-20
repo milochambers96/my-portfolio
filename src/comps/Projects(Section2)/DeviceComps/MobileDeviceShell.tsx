@@ -25,7 +25,7 @@ const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
   // }, []);
 
   return (
-    <div className="relative max-w-[320px] mx-auto">
+    <div className="relative max-w-[305px] mx-auto">
       {/* iPhone Frame */}
       <div className="bg-black rounded-[3rem] p-3 shadow-xl">
         {/* Notch */}
@@ -36,19 +36,17 @@ const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
         <div className="absolute left-[-8px] top-20 w-2 h-8 bg-gray-800 rounded-l-lg"></div>
         <div className="absolute left-[-8px] top-32 w-2 h-8 bg-gray-800 rounded-l-lg"></div>
         {/* Screen */}
-        <div className="bg-woodland-background rounded-[2.5rem] overflow-hidden w-[280px] h-[600px]">
+        <div className="bg-woodland-background rounded-[1.8rem] overflow-hidden aspect-[9/19.5]">
           {/* Project Demo Content */}
-          <div className="w-full h-full p-2 flex items-center justify-center">
-            <video
-              className="max-w-full max-h-full object-contain"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src={demo} type="video/mp4" />
-            </video>
-          </div>
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={demo} type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
