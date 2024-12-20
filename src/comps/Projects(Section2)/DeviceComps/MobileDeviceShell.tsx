@@ -36,17 +36,19 @@ const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
         <div className="absolute left-[-8px] top-20 w-2 h-8 bg-gray-800 rounded-l-lg"></div>
         <div className="absolute left-[-8px] top-32 w-2 h-8 bg-gray-800 rounded-l-lg"></div>
         {/* Screen */}
-        <div className="bg-woodland-background rounded-[1.8rem] overflow-hidden aspect-[9/19.5]">
+        <div className="bg-black rounded-[1.8rem] overflow-hidden aspect-[9/19.5]">
           {/* Project Demo Content */}
-          <video
-            className="w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src={demo} type="video/mp4" />
-          </video>
+          <div className="p-[0.15rem] bg-black">
+            <video
+              className="w-full h-full object-cover rounded-[1.8rem]"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={demo} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </div>
