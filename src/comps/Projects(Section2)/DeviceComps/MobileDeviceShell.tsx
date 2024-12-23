@@ -1,29 +1,8 @@
-import { useState, useEffect, useRef } from "react";
-
 interface MobileDemoProp {
   demo: string | undefined;
 }
 
 const MobileDeviceShell = ({ demo }: MobileDemoProp) => {
-  // const videoRef = useRef<HTMLVideoElement>(null);
-  // const [aspectRatio, setAspectRatio] = useState<number | null>(null);
-
-  // useEffect(() => {
-  //   const getVideoAspectRatio = (videoElement: HTMLVideoElement): number => {
-  //     return videoElement.videoWidth / videoElement.videoHeight;
-  //   };
-
-  //   if (videoRef.current) {
-  //     videoRef.current.onloadedmetadata = () => {
-  //       if (videoRef.current) {
-  //         const ratio = getVideoAspectRatio(videoRef.current);
-  //         setAspectRatio(ratio);
-  //         console.log("Aspect Ratio:", ratio);
-  //       }
-  //     };
-  //   }
-  // }, []);
-
   return (
     <div className="relative max-w-[305px] mx-auto">
       {/* iPhone Frame */}
