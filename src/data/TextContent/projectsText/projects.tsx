@@ -124,7 +124,7 @@ export const GAProjects: IProject[] = [
     duration: "1 Week Sprint",
     description: project4Description,
     repo: "https://github.com/milochambers96/OpenStudio-FE",
-    deployed: "https://openstudio-app.netlify.app/",
+    deployed: "https://openstudio.netlify.app/",
     demo: {
       desktop: project4DeskDemo,
       mobile: project4MobDemoUrl,
