@@ -9,7 +9,7 @@ export const workExps: IWorkExp[] = [
   {
     id: 1,
     position: "Fin Crime Compliance Analyst",
-    institution: "Ghana International Bank",
+    institution: "GHIB",
     location: "London",
     duration: "Aug 2022 - Jul 2024",
     responsibilities: respGHIB,

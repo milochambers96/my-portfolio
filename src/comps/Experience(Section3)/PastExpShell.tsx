@@ -55,7 +55,7 @@ const PastExpShell = () => {
         </div>
 
         <article className="flex justify-center mt-6 md:mt-16">
-          <div className="flex justify-center md:w-4/5 backdrop-blur-sm bg-woodland-muted/50 border-2 border-woodland-secondary rounded-lg shadow-lg px-4 py-6">
+          <div className="flex justify-center md:w-4/5 backdrop-blur-sm bg-woodland-muted border-2 border-woodland-secondary rounded-lg shadow-lg px-4 py-6">
             <p className="text-woodland-text text-sm md:text-lg text-justify font-outfit">
               Please check out{" "}
               <a

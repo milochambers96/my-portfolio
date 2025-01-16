@@ -6,7 +6,7 @@ const PortPhoto = () => {
       <img
         className="size-3/4 border-8 border-woodland-secondary rounded-lg shadow-xl"
         src={profilePic}
-        alt="A picture of this developer"
+        alt="A picture of this developer (Milo Chambers) infront of a glacier."
       />
     </div>
   );

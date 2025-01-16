@@ -16,7 +16,7 @@ const ConnectShell = () => {
         <div className="p-6">
           <div
             id="connect-container"
-            className="mx-auto md:w-4/5 p-6 backdrop-blur-sm bg-woodland-muted/50 border-2 border-woodland-secondary rounded-lg space-y-6 "
+            className="mx-auto md:w-4/5 p-6 backdrop-blur-sm bg-woodland-muted border-2 border-woodland-secondary rounded-lg space-y-6 "
           >
             <div id="connect-title-container" className="flex justify-center">
               <h2 className="flex items-center justify-center gap-2 text-2xl md:text-3xl text-woodland-text font-bold font-space">

@@ -27,8 +27,7 @@ const ProjectOverview = ({ project }: ProjectOverview) => {
             </div>
           </div>
         </div>
-        {/* <span className="font-black px-1">||</span>{" "}
-          {project.buildFormat} project built as a {project.duration} */}
+
         <div className="md:hidden space-y-4 text-sm">
           <div className="w-4/5 mx-auto py-2 border border-woodland-secondary rounded-lg bg-woodland-muted/60 shadow">
             <p>{project.projectType}</p>

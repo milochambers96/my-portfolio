@@ -12,6 +12,7 @@ module.exports = {
           secondary: "#8FA098",
           accent: "#2D4B3E",
           "accent-text": "#F2F7F5",
+          "accent-border": "#334D42",
 
           link: "#7FBA9A",
           "link-select": "#94CF96",

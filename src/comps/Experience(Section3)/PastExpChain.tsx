@@ -6,7 +6,7 @@ interface ExpChainProp {
 
 const PastExpChain = ({ pastExp }: ExpChainProp) => {
   return (
-    <article id="past-exp-chain" className="text-woodland-text">
+    <article id="past-exp-chain" className="text-woodland-accent-text">
       <div className="space-y-6 md:space-y-16 relative">
         {pastExp.map((exp, id) => (
           <div
@@ -14,7 +14,7 @@ const PastExpChain = ({ pastExp }: ExpChainProp) => {
             id={`past-exp-bubble-${exp.id}`}
             className="flex justify-center leading-relaxed"
           >
-            <div className="md:w-4/5 backdrop-blur-sm bg-woodland-muted/50 shadow-lg border-2 border-woodland-secondary rounded-lg p-4 shadow-2xl">
+            <div className="md:w-4/5 backdrop-blur-sm bg-woodland-muted shadow-lg border-2 border-woodland-secondary rounded-lg p-4 shadow-2xl">
               <div className="grid grid-cols-4 gap-4 md:ml-4">
                 <div
                   id={`exp-text-container-${exp.id}`}
@@ -48,7 +48,7 @@ const PastExpChain = ({ pastExp }: ExpChainProp) => {
                 </div>
               </div>
               {"responsibilities" in exp && (
-                <ul className="mt-4 space-y-2 list-disc list-outside md:ml-4 pl-4 font-outfit">
+                <ul className="mt-4 space-y-2 list-disc list-outside px-4 md:ml-4 md:pl-4 md:pr-6 font-outfit">
                   {exp.responsibilities.map((responsibility, index) => (
                     <li
                       key={index}
