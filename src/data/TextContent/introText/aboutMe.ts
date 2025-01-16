@@ -22,6 +22,6 @@ allows me to build applications that not only perform effectively but also make 
 
 const futurePara = `I'm seeking opportunities as a junior software engineer - whether in a full-time role or freelance 
 capacity - where I can apply my unique background and technical skills while continuing to grow as a developer. I'm particularly 
-drawn to organisations that value both technical excellence and human-centered approaches to problem-solving.`;
+drawn to organisations that value technical excellence and human-centered approaches to problem-solving.`;
 
 export const careerJourneyParagraphs = [pastPara, presentPara, futurePara];

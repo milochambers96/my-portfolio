@@ -11,13 +11,13 @@ const AboutMe = () => {
         id="about-me-intro-container"
         className="flex flex-col justify-center items-center md:space-y-6 sm:space-y-2 text-woodland-text"
       >
-        <h2 className="flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold font-space mb-6">
+        <h2 className="flex items-center justify-center gap-2 text-2xl md:text-3xl font-bold font-space">
           <FaPuzzlePiece className="text-woodland-secondary mb-2" />A Little Bit
           About Me...
         </h2>
         <HighlightMessages />
       </div>
-      <div id="about-me-desktop-view" className="hidden md:block">
+      {/* <div id="about-me-desktop-view" className="hidden md:block">
         <div className="space-y-4 py-8">
           <div className="grid grid-cols-2 gap-4">
             <div className="col-span-1 h-full">
@@ -28,9 +28,9 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div id="about-me-mobile-view" className="md:hidden space-y-4">
+      <div id="about-me-mobile-view" className="space-y-4 ">
         <MyBrand />
         <SkillsGrid />
       </div>

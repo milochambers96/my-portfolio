@@ -2,21 +2,33 @@ import { careerJourneyParagraphs } from "../../../data/TextContent/introText/abo
 import { FaCameraRetro } from "react-icons/fa6";
 
 const MyBrand = () => {
+  const paragraphTitles = [
+    "Foundations & Approach",
+    "Solutions & Progress",
+    "Next Chapter & Aspirations",
+  ];
   return (
     <article
       id="my-brand-statement"
-      className="max-w-4xl mx-auto p-6 h-full text-woodland-text"
+      className="p-9 mx-auto py-6 text-woodland-text"
     >
       <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold font-space mb-6">
         <FaCameraRetro className="text-woodland-secondary" />
-        Milo in a Snapshot
+        In a Snapshot
       </h3>
-
-      <div className="space-y-4 text-justify leading-relaxed font-semibold">
+      <div className="text-justify">
         {careerJourneyParagraphs.map((para, index) => (
-          <p key={index} className="font-outfit">
-            {para}
-          </p>
+          <>
+            <h6 className="text-md md:text-lg mx-4 text-center md:text-justify md:mx-0 text-woodland-link italic font-semibold font-redhat mb-2">
+              {paragraphTitles[index]}
+            </h6>
+            <p
+              key={index}
+              className="mx-4 leading-relaxed font-outfit font-medium mb-6"
+            >
+              {para}
+            </p>
+          </>
         ))}
       </div>
     </article>
