@@ -15,15 +15,29 @@ const ProjectOverview = ({ project }: ProjectOverview) => {
         id={`project${project.projectNum}-subtitle-container`}
         className="text-center"
       >
-        <p className="hidden md:block font-medium">
-          {project.projectType} <span className="font-black px-1">||</span>{" "}
-          {project.buildFormat} project built as a {project.duration}
-        </p>
-        <div className="md:hidden space-y-1 text-sm">
-          <p>{project.projectType}</p>
-          <p>
-            {project.buildFormat} project built as a {project.duration}
-          </p>
+        <div className="hidden md:block px-4 text-sm font-medium">
+          <div className="flex justify-between">
+            <div className="w-[48%] py-2  border border-woodland-secondary rounded-lg bg-woodland-muted/60">
+              <p className="font-medium">{project.projectType}</p>
+            </div>
+            <div className="w-[48%] py-2  border border-woodland-secondary rounded-lg bg-woodland-muted/60">
+              <p className="font-medium">
+                {project.buildFormat} project - {project.duration}
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <span className="font-black px-1">||</span>{" "}
+          {project.buildFormat} project built as a {project.duration} */}
+        <div className="md:hidden space-y-4 text-sm">
+          <div className="w-4/5 mx-auto py-2 border border-woodland-secondary rounded-lg bg-woodland-muted/60 shadow">
+            <p>{project.projectType}</p>
+          </div>
+          <div className="w-4/5 mx-auto py-2 border border-woodland-secondary rounded-lg bg-woodland-muted/60 shadow">
+            <p>
+              {project.buildFormat} project - {project.duration}
+            </p>
+          </div>
         </div>
       </div>
 
