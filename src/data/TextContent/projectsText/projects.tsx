@@ -33,7 +33,7 @@ export interface IProject {
   builtWith: string[];
   buildFormat: string;
   duration: string;
-  description: string;
+  description: string[];
   repo: string;
   deployed: string;
   demo?: IDemo;

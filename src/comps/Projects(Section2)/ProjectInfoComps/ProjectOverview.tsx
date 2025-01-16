@@ -7,7 +7,12 @@ interface ProjectOverview {
 
 const ProjectOverview = ({ project }: ProjectOverview) => {
   const buildTechStack = project.builtWith;
-  const descriptionPararaphs = project.description.split("\n\n");
+  // const descriptionPararaphs = project.description.split("\n\n")
+  const projectSubtitles = [
+    "Context & Vision",
+    "Build & Innovation",
+    "Impact & Insights",
+  ];
 
   return (
     <div className="flex flex-col space-y-6 text-woodland-text font-outfit">
@@ -42,10 +47,20 @@ const ProjectOverview = ({ project }: ProjectOverview) => {
 
       <div
         id={`project${project.projectNum}-summary-container`}
-        className="space-y-6 text-justify font-semibold leading-relaxed"
+        className="text-justify"
       >
-        {descriptionPararaphs.map((para, index) => (
-          <p key={index}>{para}</p>
+        {project.description.map((para, index) => (
+          <>
+            <h6 className="text-md md:text-lg mx-4 text-center md:text-justify md:ml-2 text-woodland-link italic font-semibold font-redhat mb-2">
+              {projectSubtitles[index]}
+            </h6>
+            <p
+              key={index}
+              className="mx-4 leading-relaxed font-outfit font-medium mb-6"
+            >
+              {para}
+            </p>
+          </>
         ))}
 
         <BuildStack buildTechStack={buildTechStack} />

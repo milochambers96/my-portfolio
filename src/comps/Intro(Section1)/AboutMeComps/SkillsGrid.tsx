@@ -1,17 +1,10 @@
 import { mySkills } from "../../../data/TextContent/introText/mySkills";
 
-import { FaCode } from "react-icons/fa";
-
 const SkillsGrid = () => {
   const skills = mySkills;
 
   return (
     <article className="max-w-6xl mx-auto p-6 h-full">
-      <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold font-space mb-6 text-woodland-text">
-        <FaCode className="text-woodland-secondary" />
-        Technical Skills
-      </h3>
-
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
         {skills.map((skill) => (
           <div

@@ -32,7 +32,7 @@ const AboutMe = () => {
 
       <div id="about-me-mobile-view" className="space-y-4 ">
         <MyBrand />
-        <SkillsGrid />
+        {/* <SkillsGrid /> */}
       </div>
     </section>
   );
