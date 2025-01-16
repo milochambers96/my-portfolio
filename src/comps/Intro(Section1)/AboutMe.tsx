@@ -1,7 +1,6 @@
 import { FaPuzzlePiece } from "react-icons/fa6";
 
 import MyBrand from "./AboutMeComps/MyBrand";
-import SkillsGrid from "./AboutMeComps/SkillsGrid";
 import HighlightMessages from "./AboutMeComps/HighlightMessages";
 
 const AboutMe = () => {
@@ -17,22 +16,9 @@ const AboutMe = () => {
         </h2>
         <HighlightMessages />
       </div>
-      {/* <div id="about-me-desktop-view" className="hidden md:block">
-        <div className="space-y-4 py-8">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="col-span-1 h-full">
-              <MyBrand />
-            </div>
-            <div className="col-span-1 h-full">
-              <SkillsGrid />
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div id="about-me-mobile-view" className="space-y-4 ">
         <MyBrand />
-        {/* <SkillsGrid /> */}
       </div>
     </section>
   );

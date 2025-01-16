@@ -21,6 +21,7 @@ import {
   SiVite,
   SiHeroku,
   SiPostman,
+  SiNetlify,
 } from "react-icons/si";
 
 export const mySkills = [
@@ -133,6 +134,13 @@ export const mySkills = [
     color: "text-purple-600",
     category: "Tools",
   },
+  {
+    name: "Netlify",
+    icon: <SiNetlify />,
+    color: "text-teal-400",
+    category: "Tools",
+  },
+
   {
     name: "Terminal",
     icon: <FaTerminal />,
