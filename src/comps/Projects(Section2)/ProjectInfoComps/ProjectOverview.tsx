@@ -51,7 +51,7 @@ const ProjectOverview = ({ project }: ProjectOverview) => {
       >
         {project.description.map((para, index) => (
           <>
-            <h6 className="text-md md:text-sm mx-4 text-center md:text-justify md:ml-2 text-woodland-link italic font-semibold font-redhat mb-2">
+            <h6 className="text-md md:text-sm mx-4 text-center md:text-justify  text-woodland-link italic font-semibold font-redhat mb-2 md:mb-1">
               {projectSubtitles[index]}
             </h6>
             <p
